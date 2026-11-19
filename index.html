@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alles Gute zum Geburtstag, Simona! ✨🎂</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            champagne: '#FFF9F5',
+            blush: '#FDECE4',
+            rosegold: '#E8998D',
+            softpink: '#F4ACB7',
+            warmgold: '#D4AF37',
+            espresso: '#2C2220',
+            cocoa: '#5C4B47',
+            sbuxdark: '#1E3932',
+            sbuxgreen: '#00704A',
+            sbuxdeep: '#0B422E',
+          },
+          animation: {
+            'float-slow': 'floatSlow 5s ease-in-out infinite',
+            'pulse-soft': 'pulseSoft 2.2s ease-in-out infinite',
+            'shimmer-sweep': 'shimmerSweep 3s linear infinite',
+            'pop-in': 'popIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+          },
+          keyframes: {
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' },
+            },
+            pulseSoft: {
+              '0%, 100%': {
+                transform: 'scale(1)',
+                boxShadow: '0 14px 32px -6px rgba(0, 112, 74, 0.45), 0 0 0 0 rgba(212, 175, 55, 0.4)',
+              },
+              '50%': {
+                transform: 'scale(1.035)',
+                boxShadow: '0 18px 38px -4px rgba(0, 112, 74, 0.55), 0 0 0 10px rgba(212, 175, 55, 0)',
+              },
+            },
+            shimmerSweep: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            },
+            popIn: {
+              '0%': { opacity: '0', transform: 'translateY(12px) scale(0.96)' },
+              '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+            },
+            modalSpringIn: {
+              '0%': { opacity: '0', transform: 'translateY(26px) scale(0.88)' },
+              '65%': { opacity: '1', transform: 'translateY(-4px) scale(1.015)' },
+              '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    .animate-modal-spring {
+      animation: modalSpringIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* Warm champagne & blush boutique café background */
+    body {
+      background:
+        radial-gradient(circle at 12% 14%, rgba(244, 172, 183, 0.28) 0%, transparent 42%),
+        radial-gradient(circle at 88% 18%, rgba(212, 175, 55, 0.16) 0%, transparent 40%),
+        radial-gradient(circle at 50% 88%, rgba(232, 153, 141, 0.22) 0%, transparent 48%),
+        linear-gradient(160deg, #FFF9F5 0%, #FDECE4 52%, #FFF7F2 100%);
+      color: #2C2220;
+      overflow-x: hidden;
+    }
+
+    /* Frosted boutique glass card */
+    .boutique-glass {
+      background: rgba(255, 255, 255, 0.76);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(232, 153, 141, 0.32);
+      box-shadow:
+        0 20px 45px -14px rgba(176, 118, 108, 0.16),
+        0 4px 16px rgba(212, 175, 55, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    /* Floating ambient sparkles & pastel hearts */
+    @keyframes riseParticle {
+      0% {
+        transform: translateY(105vh) rotate(0deg) scale(0.85);
+        opacity: 0;
+      }
+      15% {
+        opacity: 0.65;
+      }
+      85% {
+        opacity: 0.55;
+      }
+      100% {
+        transform: translateY(-12vh) rotate(25deg) scale(1.08);
+        opacity: 0;
+      }
+    }
+
+    .ambient-particle {
+      position: fixed;
+      pointer-events: none;
+      user-select: none;
+      z-index: 1;
+      animation: riseParticle linear infinite;
+    }
+
+    /* Luxurious rose-gold shimmer button */
+    .rosegold-btn {
+      background: linear-gradient(135deg, #E8998D 0%, #F4ACB7 48%, #DF8275 100%);
+      box-shadow:
+        0 12px 28px -6px rgba(223, 130, 117, 0.52),
+        inset 0 1px 1px rgba(255, 255, 255, 0.65);
+    }
+
+    /* Unlocked Starbucks Emerald & Gold VIP button */
+    .starbucks-unlock-btn {
+      background: linear-gradient(135deg, #1E3932 0%, #00704A 55%, #0B422E 100%);
+      border: 1.5px solid rgba(212, 175, 55, 0.75);
+      box-shadow:
+        0 14px 32px -6px rgba(0, 112, 74, 0.48),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+    }
+
+    /* Smooth runaway button glide */
+    #runaway-btn {
+      transition:
+        left 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        top 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Speech bubble above runaway button */
+    #speech-bubble {
+      transition:
+        left 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        top 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.22s ease,
+        transform 0.22s ease;
+    }
+
+    /* 3D Perspective Wrapper & Realistic Starbucks VIP Card */
+    .card-perspective {
+      perspective: 1200px;
+    }
+
+    .starbucks-vip-card {
+      background: linear-gradient(135deg, #006241 0%, #00704A 48%, #1E3932 100%);
+      border: 1.5px solid rgba(212, 175, 55, 0.65);
+      box-shadow:
+        0 28px 60px -15px rgba(14, 48, 37, 0.52),
+        0 10px 24px -8px rgba(212, 175, 55, 0.28),
+        inset 0 1px 1px rgba(255, 255, 255, 0.28);
+      transform-style: preserve-3d;
+      transition: transform 0.16s ease-out, box-shadow 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Dynamic mouse/touch specular light sheen across the Starbucks card */
+    .card-sheen {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        circle 260px at var(--sheen-x, 50%) var(--sheen-y, 35%),
+        rgba(255, 248, 225, 0.26) 0%,
+        rgba(212, 175, 55, 0.1) 42%,
+        transparent 75%
+      );
+      transition: opacity 0.25s ease;
+      z-index: 2;
+    }
+
+    /* Gold-leaf shimmer text for Simona's name */
+    .gold-leaf-text {
+      background: linear-gradient(
+        110deg,
+        #D4AF37 0%,
+        #FFF2B2 28%,
+        #E6C15A 52%,
+        #FFF6CC 76%,
+        #D4AF37 100%
+      );
+      background-size: 220% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerSweep 4s linear infinite;
+    }
+
+    /* Frosted dark emerald glass panel for Card Number & PIN */
+    .emerald-glass-box {
+      background: rgba(10, 29, 23, 0.64);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(212, 175, 55, 0.38);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    /* Boutique Cream & Emerald Perforated Cafe Coupon */
+    .cafe-coupon-ticket {
+      background: linear-gradient(155deg, #FFFDF9 0%, #FFF6EE 60%, #F9EFE6 100%);
+      border: 1.5px solid rgba(0, 98, 65, 0.28);
+      box-shadow:
+        0 20px 42px -14px rgba(30, 57, 50, 0.22),
+        0 4px 14px rgba(212, 175, 55, 0.14);
+      position: relative;
+    }
+
+    /* Scalloped left & right ticket punch holes */
+    .ticket-scallop-left,
+    .ticket-scallop-right {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 9999px;
+      background: #FDECE4;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+    }
+    .ticket-scallop-left {
+      left: -13px;
+      border-right: 1.5px solid rgba(0, 98, 65, 0.28);
+    }
+    .ticket-scallop-right {
+      right: -13px;
+      border-left: 1.5px solid rgba(0, 98, 65, 0.28);
+    }
+
+    /* Checklist checkmark transition */
+    .agenda-item {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .agenda-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .agenda-check {
+      transform: scale(0.65);
+      background: rgba(232, 153, 141, 0.16);
+      border-color: rgba(232, 153, 141, 0.45);
+      color: transparent;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .agenda-item.checked .agenda-check {
+      transform: scale(1);
+      background: linear-gradient(135deg, #E8998D, #D4AF37);
+      border-color: transparent;
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(232, 153, 141, 0.4);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-softpink/40 selection:text-espresso">
+
+  <!-- Multi-Layered Sky Celebration Canvas (Popper Cannons, Confetti, Petals, Rising Balloons, Flowers, Stars & Flying Unicorns with Princess Kisses) -->
+  <canvas id="celebration-canvas" class="fixed inset-0 pointer-events-none z-[60]"></canvas>
+
+  <!-- Subtle Floating "More Magic" Trigger Button -->
+  <button
+    id="more-magic-btn"
+    type="button"
+    class="fixed top-4 right-4 z-30 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white/80 hover:bg-white backdrop-blur-md border border-warmgold/45 shadow-sm hover:shadow-md text-xs font-semibold text-espresso transition active:scale-95 cursor-pointer"
+  >
+    <span>✨ Mehr Magie</span>
+  </button>
+
+  <!-- Floating Copy Toast Notification -->
+  <div
+    id="copy-toast"
+    role="status"
+    aria-live="polite"
+    class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[55] pointer-events-none opacity-0 translate-y-2 transition-all duration-300 px-4 py-2 rounded-full bg-sbuxdark text-white border border-warmgold/60 shadow-xl text-xs sm:text-sm font-semibold flex items-center gap-1.5"
+  >
+    <span id="copy-toast-text">Kopiert! ✓</span>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="relative z-10 w-full max-w-2xl mx-auto px-4 sm:px-6 pt-12 sm:pt-14 pb-16 flex flex-col gap-7 sm:gap-8">
+
+    <!-- 1. HERO HEADER -->
+    <header class="text-center flex flex-col items-center">
+      <!-- Top Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/85 border border-warmgold/45 shadow-sm mb-4">
+        <span class="text-xs sm:text-[13px] font-bold tracking-[0.12em] text-espresso uppercase">
+          ✨ ALLES GUTE ZUM GEBURTSTAG, <span id="hero-badge-name">SIMONA</span> ✨
+        </span>
+      </div>
+
+      <!-- Elegant Serif Shimmer Headline -->
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-[54px] font-extrabold tracking-tight text-espresso leading-[1.14]">
+        Alles Gute zum Geburtstag, <span id="hero-headline-name" class="text-[#C96B5E]">Simona</span>!
+      </h1>
+
+      <!-- Warm, Heartfelt Friendship Subtitle -->
+      <p class="mt-4 max-w-xl text-sm sm:text-base md:text-[17px] text-cocoa leading-relaxed font-normal">
+        Für einen der herzlichsten und wunderbarsten Menschen bei der Arbeit – danke, dass du immer so lieb zu mir bist, für all unser gemeinsames Lachen und dafür, dass du eine echte Freundin bist, der ich meine Geschichten und Geheimnisse anvertrauen kann. Heute feiern wir nur dich und machen deinen Tag genauso zauberhaft, wie du jeden Tag für andere machst!
+      </p>
+    </header>
+
+    <!-- 2. TODAY'S BIRTHDAY WISH (HIGHLIGHT CARD) -->
+    <section class="boutique-glass rounded-3xl p-5 sm:p-7">
+      <div class="flex items-center justify-between gap-2 pb-3.5 mb-4 border-b border-rosegold/25">
+        <div class="flex items-center gap-2.5">
+          <span class="w-8 h-8 rounded-full bg-gradient-to-br from-softpink/40 to-warmgold/30 flex items-center justify-center text-base">
+            💖
+          </span>
+          <h2 class="font-serif text-lg sm:text-xl font-bold text-espresso">
+            Dein Geburtstags-Wunsch für heute
+          </h2>
+        </div>
+        <span id="agenda-status-pill" class="px-3 py-1 rounded-full bg-warmgold/15 border border-warmgold/35 text-[11px] font-semibold text-[#9A7B1C]">
+          Wird vorbereitet...
+        </span>
+      </div>
+
+      <ul id="agenda-list" class="space-y-3">
+        <li class="agenda-item flex items-center gap-3.5 p-2.5 rounded-2xl bg-white/65 border border-white/85">
+          <span class="agenda-check w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold shrink-0">
+            ✓
+          </span>
+          <span class="text-sm sm:text-[15px] font-medium text-espresso">
+            Deine Herzlichkeit &amp; dein wundervolles Wesen feiern 🌸
+          </span>
+        </li>
+
+        <li class="agenda-item flex items-center gap-3.5 p-2.5 rounded-2xl bg-white/65 border border-white/85">
+          <span class="agenda-check w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold shrink-0">
+            ✓
+          </span>
+          <span class="text-sm sm:text-[15px] font-medium text-espresso">
+            Endloses Lachen, geteilte Geheimnisse &amp; echte Freundschaft 💫
+          </span>
+        </li>
+
+        <li class="agenda-item flex items-center gap-3.5 p-2.5 rounded-2xl bg-white/65 border border-white/85">
+          <span class="agenda-check w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold shrink-0">
+            ✓
+          </span>
+          <span class="text-sm sm:text-[15px] font-medium text-espresso">
+            Eine wohlverdiente süße Kaffee- &amp; Kuchen-Auszeit ☕🍰
+          </span>
+        </li>
+
+        <li class="agenda-item flex items-center gap-3.5 p-2.5 rounded-2xl bg-white/65 border border-white/85">
+          <span class="agenda-check w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold shrink-0">
+            ✓
+          </span>
+          <span class="text-sm sm:text-[15px] font-medium text-espresso">
+            Eine märchenhafte Überraschung wartet unten auf dich 🦄✨
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3. PLAYFUL 5-GLIDE GIFT BUTTON ARENA -->
+    <section id="arena-section" class="boutique-glass rounded-3xl p-5 sm:p-8 text-center relative overflow-hidden">
+      <div class="max-w-md mx-auto">
+        <span class="inline-block text-xs font-semibold uppercase tracking-widest text-[#B86458] mb-1">
+          Eine kleine süße Überraschung
+        </span>
+        <h2 class="font-serif text-2xl sm:text-[28px] font-bold text-espresso">
+          Bereit für dein Geburtstagsgeschenk?
+        </h2>
+        <p id="arena-subtext" class="text-xs sm:text-sm text-cocoa mt-1">
+          Tippe auf den Geschenk-Button, um deine zauberhafte Überraschung freizuschalten!
+        </p>
+      </div>
+
+      <!-- Interactive Playfield Stage -->
+      <div
+        id="button-arena"
+        class="relative w-full h-64 sm:h-72 mt-5 rounded-2xl bg-gradient-to-b from-[#FFFBF8]/90 to-[#FDECE4]/75 border-2 border-dashed border-rosegold/45 flex items-center justify-center overflow-hidden shadow-inner"
+      >
+        <!-- Decorative subtle pastel rings in center -->
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-35">
+          <div class="w-40 h-40 rounded-full border border-softpink/60"></div>
+          <div class="absolute w-64 h-64 rounded-full border border-warmgold/30"></div>
+        </div>
+
+        <!-- Cute Floating Speech Bubble above the Button -->
+        <div
+          id="speech-bubble"
+          class="hidden absolute z-30 pointer-events-none px-4 py-2 rounded-2xl bg-white border border-rosegold/45 shadow-lg text-xs sm:text-[13px] font-semibold text-espresso whitespace-nowrap"
+        >
+          <span id="speech-bubble-text">Ups! Zu schnell! Versuch's nochmal ✨</span>
+          <!-- Speech bubble downward pointer triangle -->
+          <span
+            class="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-3 h-3 bg-white border-r border-b border-rosegold/45 rotate-45"
+          ></span>
+        </div>
+
+        <!-- The Playful Runaway Gift Button -->
+        <button
+          id="runaway-btn"
+          type="button"
+          class="z-20 rosegold-btn px-6 py-3.5 sm:px-8 sm:py-4 rounded-full font-bold text-sm sm:text-base text-white tracking-wide cursor-pointer whitespace-nowrap border border-white/55"
+        >
+          🎁 Tippe, um dein Geschenk freizuschalten
+        </button>
+      </div>
+
+      <!-- Subtle Progress Dots -->
+      <div id="dodge-dots" class="mt-4 flex items-center justify-center gap-2" aria-hidden="true">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Re-open Pop-Up Shortcut (Shown after unlocking in case she closes the modal) -->
+      <div id="reopen-popup-bar" class="hidden mt-4 pt-3 border-t border-rosegold/20">
+        <button
+          id="reopen-popup-btn"
+          type="button"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-sbuxgreen hover:bg-sbuxdark text-white font-semibold text-xs sm:text-sm shadow-md transition active:scale-95 cursor-pointer"
+        >
+          <span>🎁 Deinen Starbucks-Gutschein wieder öffnen ✨</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. GRAND COUPON POP-UP MODAL OVERLAY (z-40) -->
+  <div
+    id="coupon-modal"
+    class="fixed inset-0 z-40 hidden items-center justify-center p-3 sm:p-5 bg-espresso/45 backdrop-blur-md overflow-y-auto"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="coupon-modal-title"
+  >
+    <div
+      id="coupon-modal-panel"
+      class="relative w-full max-w-lg my-auto rounded-[32px] bg-gradient-to-b from-[#FFFDF9]/95 via-[#FFF7F1]/95 to-[#FDECE4]/95 backdrop-blur-xl border border-warmgold/55 shadow-[0_32px_70px_-12px_rgba(44,34,32,0.45)] p-5 sm:p-7 animate-modal-spring"
+    >
+      <!-- Close (×) Button -->
+      <button
+        id="close-coupon-modal-btn"
+        type="button"
+        aria-label="Geburtstagsgeschenk-Fenster schließen"
+        class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-white/85 hover:bg-white border border-rosegold/40 text-cocoa hover:text-espresso shadow-sm flex items-center justify-center text-lg font-bold transition active:scale-95 cursor-pointer"
+      >
+        ×
+      </button>
+
+      <!-- Top Ribbon -->
+      <div class="text-center pr-6 sm:pr-0">
+        <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#FDECE4] via-[#FFF6DC] to-[#FDECE4] border border-warmgold/50 shadow-sm">
+          <span class="text-[11px] sm:text-xs font-extrabold tracking-wider text-espresso uppercase">
+            🎉 EINE SÜSSE GEBURTSTAGSÜBERRASCHUNG FÜR <span id="modal-ribbon-name">SIMONA</span> 🎉
+          </span>
+        </div>
+        <h2 id="coupon-modal-title" class="font-serif text-2xl sm:text-[28px] font-bold text-espresso mt-2.5">
+          Dein VIP-Starbucks-Geburtstagsgeschenk
+        </h2>
+      </div>
+
+      <!-- A. INTERACTIVE 3D TILT STARBUCKS VIP GIFT CARD -->
+      <div class="card-perspective w-full mt-4">
+        <div id="starbucks-card" class="starbucks-vip-card rounded-[26px] text-white select-none">
+          <!-- Dynamic Specular Light Sheen -->
+          <div id="card-sheen" class="card-sheen"></div>
+
+          <!-- Subtle Decorative Golden Star Motifs & Geometric Rings -->
+          <div class="pointer-events-none absolute -top-16 -right-16 w-56 h-56 rounded-full border border-warmgold/25"></div>
+          <div class="pointer-events-none absolute -top-10 -right-10 w-44 h-44 rounded-full border border-warmgold/15"></div>
+          <span class="pointer-events-none absolute top-16 right-8 text-warmgold/35 text-lg">✦</span>
+          <span class="pointer-events-none absolute bottom-28 left-6 text-warmgold/25 text-sm">✦</span>
+          <span class="pointer-events-none absolute top-28 left-1/2 text-warmgold/25 text-xs">✦</span>
+
+          <div class="relative z-10 p-5 sm:p-6">
+            <!-- Top Row: Golden Coffee Cup & Crown Emblem + Title + Value Pill -->
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <!-- Golden Coffee Cup & Crown Emblem -->
+                <div class="w-11 h-11 rounded-2xl bg-white/10 border border-warmgold/50 flex items-center justify-center shrink-0 shadow-inner">
+                  <svg class="w-6 h-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 13L18 8L24 12L30 8L33 13H15Z" fill="#D4AF37" stroke="#FFF2B2" stroke-width="1.2" stroke-linejoin="round"/>
+                    <rect x="13" y="15.5" width="22" height="3.2" rx="1.6" fill="#FFF9F5"/>
+                    <path d="M15 19H33L30.8 38.5C30.6 39.9 29.4 41 28 41H20C18.6 41 17.4 39.9 17.2 38.5L15 19Z" fill="#FFF9F5" fill-opacity="0.95"/>
+                    <path d="M15.7 25H32.3L31.5 32.5H16.5L15.7 25Z" fill="#006241"/>
+                    <path d="M24 30.6C24 30.6 21.2 28.8 21.2 27.1C21.2 26.2 21.9 25.6 22.7 25.6C23.3 25.6 23.8 25.9 24 26.4C24.2 25.9 24.7 25.6 25.3 25.6C26.1 25.6 26.8 26.2 26.8 27.1C26.8 28.8 24 30.6 24 30.6Z" fill="#F4ACB7"/>
+                  </svg>
+                </div>
+
+                <div>
+                  <p class="text-[11px] font-extrabold tracking-[0.14em] text-[#E6F4EF] uppercase">
+                    STARBUCKS DE • VIP-GEBURTSTAG
+                  </p>
+                  <p class="text-[11px] font-medium text-warmgold tracking-wider uppercase mt-0.5">
+                    Digitaler eGutschein
+                  </p>
+                </div>
+              </div>
+
+              <!-- Golden Metallic Value Pill -->
+              <span class="px-3 py-1 rounded-full bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] text-sbuxdark font-extrabold text-[11px] tracking-wider uppercase shadow-md shrink-0">
+                Wert: 10,00 €
+              </span>
+            </div>
+
+            <!-- Recipient Name in Gold Script/Serif Shimmer -->
+            <div class="mt-4 flex items-end justify-between gap-4">
+              <div>
+                <p class="text-xs text-[#CBE3DA] font-medium">
+                  Mit ganz viel Herz für
+                </p>
+                <h3 id="card-recipient-name" class="font-serif italic text-3xl sm:text-4xl font-extrabold gold-leaf-text mt-0.5 tracking-tight">
+                  Simona
+                </h3>
+              </div>
+              <span class="text-2xl sm:text-3xl" aria-hidden="true">☕👑</span>
+            </div>
+
+            <!-- CRYSTAL-CLEAR 16-DIGIT CARD NUMBER & 8-DIGIT PIN BOXES -->
+            <div class="emerald-glass-box rounded-2xl p-3.5 sm:p-4 mt-4 space-y-3">
+              <!-- Card Number Row -->
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.14em] text-[#A8D5C5] uppercase">
+                    16-STELLIGE KARTENNUMMER
+                  </span>
+                  <span class="text-[10px] text-warmgold font-medium">Starbucks DE</span>
+                </div>
+                <div class="flex items-center justify-between gap-2 bg-black/25 border border-white/10 rounded-xl px-3 py-2">
+                  <code
+                    id="display-card-number"
+                    class="font-mono text-xs sm:text-base font-bold text-white tracking-wider select-all"
+                  >
+                    6354 1578 6138 8115
+                  </code>
+                  <button
+                    id="copy-card-btn"
+                    type="button"
+                    class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#E6C55A] hover:brightness-110 active:scale-95 text-sbuxdark font-bold text-xs transition shrink-0 cursor-pointer shadow-sm"
+                  >
+                    Kopieren
+                  </button>
+                </div>
+              </div>
+
+              <!-- Security PIN Row -->
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.14em] text-[#A8D5C5] uppercase">
+                    8-STELLIGER PIN-CODE
+                  </span>
+                  <span class="text-[10px] text-warmgold font-medium">Gültig bis 27.05.2029</span>
+                </div>
+                <div class="flex items-center justify-between gap-2 bg-black/25 border border-white/10 rounded-xl px-3 py-2">
+                  <code
+                    id="display-pin-number"
+                    class="font-mono text-xs sm:text-base font-bold text-[#F6E299] tracking-[0.18em] select-all"
+                  >
+                    35736922
+                  </code>
+                  <button
+                    id="copy-pin-btn"
+                    type="button"
+                    class="px-3 py-1.5 rounded-lg bg-white/15 hover:bg-white/25 active:scale-95 text-white border border-white/20 font-bold text-xs transition shrink-0 cursor-pointer"
+                  >
+                    Kopieren
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- B. MATCHING SCALLOPED CAFE COUPON BELOW THE CARD -->
+      <div class="w-full mt-4">
+        <div class="cafe-coupon-ticket rounded-3xl overflow-hidden">
+          <!-- Scalloped Ticket Punch Notches -->
+          <span class="ticket-scallop-left" aria-hidden="true"></span>
+          <span class="ticket-scallop-right" aria-hidden="true"></span>
+
+          <!-- Top Cream Ticket Body -->
+          <div class="p-5 sm:p-6 pb-4">
+            <div class="flex items-center justify-between gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sbuxgreen/10 border border-sbuxgreen/25 text-sbuxdark text-[11px] font-bold uppercase tracking-wider">
+                🎟️ Café-Genussgutschein
+              </span>
+              <span class="text-[11px] sm:text-xs font-semibold text-[#9A7B1C]">
+                10,00 € · Gültig bis 27.05.2029
+              </span>
+            </div>
+
+            <h3 id="card-headline" class="font-serif text-xl sm:text-2xl font-bold text-sbuxdark mt-2.5">
+              1x Kaffee, Matcha &amp; Kuchen – Für deine verdiente Auszeit
+            </h3>
+
+            <p id="card-message" class="mt-2 text-xs sm:text-sm text-cocoa leading-relaxed italic">
+              "Alles Liebe zum Geburtstag an meine liebste Freundin bei der Arbeit! Danke, dass du immer so herzlich bist, für all unser Lachen und dafür, dass ich dir meine Geschichten und Geheimnisse anvertrauen kann. Gönn dir deinen Lieblingskaffee, Matcha &amp; Kuchen auf mich! 💖"
+            </p>
+
+            <p class="mt-2.5 text-xs sm:text-[13px] font-semibold text-sbuxgreen">
+              — Von Herzen, <span id="card-sender-name">Abdel</span> ✨
+            </p>
+          </div>
+
+          <!-- Perforated Divider & Redemption Instructions -->
+          <div class="bg-[#F4ECE2]/85 border-t-2 border-dashed border-sbuxgreen/30 px-5 sm:px-6 py-3.5">
+            <div class="flex items-start gap-2">
+              <span class="text-sm mt-0.5" aria-hidden="true">📱</span>
+              <p class="text-[11px] sm:text-xs text-espresso/85 leading-relaxed">
+                <strong class="text-sbuxdark font-bold">So löst du ihn ein:</strong> Füge die 16-stellige Kartennummer &amp; den 8-stelligen PIN-Code in der <strong>Starbucks App</strong> hinzu (unter <em>Karten → Karte hinzufügen</em>) oder zeige die Nummern einfach an der Kasse in einem teilnehmenden Starbucks Café in Deutschland vor. Gültig bis <strong>27.05.2029</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Replay Unicorns & Kisses Action Button -->
+      <div class="mt-4 flex flex-col items-center gap-2">
+        <button
+          id="confetti-again-btn"
+          type="button"
+          class="w-full sm:w-auto px-6 py-3 rounded-full rosegold-btn text-white font-bold text-xs sm:text-sm tracking-wide shadow-md hover:brightness-105 active:scale-95 transition cursor-pointer border border-white/55"
+        >
+          🦄 Mehr Einhörner &amp; Küsschen senden ✨
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. DISCREET FLOATING GEAR BUTTON FOR SENDER CUSTOMIZATION -->
+  <button
+    id="open-customizer-btn"
+    type="button"
+    title="Gutschein & PIN anpassen"
+    aria-label="Gutschein und PIN anpassen"
+    class="fixed bottom-4 right-4 z-30 w-10 h-10 rounded-full bg-white/80 hover:bg-white opacity-35 hover:opacity-100 backdrop-blur-md border border-rosegold/40 shadow-md flex items-center justify-center text-cocoa hover:text-espresso transition-all duration-200 cursor-pointer"
+  >
+    ⚙️
+  </button>
+
+  <!-- SENDER CUSTOMIZER MODAL -->
+  <div
+    id="customizer-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-espresso/45 backdrop-blur-sm overflow-y-auto"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="customizer-title"
+  >
+    <div class="bg-[#FFFBF8] border border-rosegold/40 rounded-3xl w-full max-w-lg p-5 sm:p-7 shadow-2xl my-auto text-espresso">
+      <div class="flex items-center justify-between pb-3.5 border-b border-rosegold/25">
+        <div>
+          <h3 id="customizer-title" class="font-serif text-xl font-bold text-espresso flex items-center gap-2">
+            <span>🎁</span> Simonas Starbucks-Gutschein anpassen
+          </h3>
+          <p class="text-xs text-cocoa mt-0.5">
+            Kartennummer &amp; PIN prüfen, Vorschau ansehen oder fertige Datei herunterladen.
+          </p>
+        </div>
+        <button
+          id="close-customizer-btn"
+          type="button"
+          class="w-8 h-8 rounded-full hover:bg-blush text-cocoa hover:text-espresso flex items-center justify-center transition cursor-pointer"
+          aria-label="Einstellungen schließen"
+        >
+          ✕
+        </button>
+      </div>
+
+      <form id="customizer-form" class="mt-4 space-y-3.5 text-sm">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="input-name" class="block text-xs font-semibold text-cocoa mb-1">
+              Empfängerin
+            </label>
+            <input
+              id="input-name"
+              type="text"
+              class="w-full px-3.5 py-2 rounded-xl bg-white border border-rosegold/40 text-espresso focus:outline-none focus:border-sbuxgreen"
+              placeholder="Simona"
+            />
+          </div>
+
+          <div>
+            <label for="input-sender" class="block text-xs font-semibold text-cocoa mb-1">
+              Absender
+            </label>
+            <input
+              id="input-sender"
+              type="text"
+              class="w-full px-3.5 py-2 rounded-xl bg-white border border-rosegold/40 text-espresso focus:outline-none focus:border-sbuxgreen"
+              placeholder="Abdel"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="input-card" class="block text-xs font-semibold text-cocoa mb-1">
+              16-stellige Starbucks-Kartennummer
+            </label>
+            <input
+              id="input-card"
+              type="text"
+              maxlength="19"
+              class="w-full px-3.5 py-2 rounded-xl bg-white border border-rosegold/40 font-mono text-sm text-sbuxdark focus:outline-none focus:border-sbuxgreen"
+              placeholder="6354 1578 6138 8115"
+            />
+          </div>
+
+          <div>
+            <label for="input-pin" class="block text-xs font-semibold text-cocoa mb-1">
+              8-stelliger PIN-Code
+            </label>
+            <input
+              id="input-pin"
+              type="text"
+              maxlength="8"
+              class="w-full px-3.5 py-2 rounded-xl bg-white border border-rosegold/40 font-mono text-sm text-sbuxdark focus:outline-none focus:border-sbuxgreen"
+              placeholder="35736922"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="input-headline" class="block text-xs font-semibold text-cocoa mb-1">
+            Gutschein-Titel
+          </label>
+          <input
+            id="input-headline"
+            type="text"
+            class="w-full px-3.5 py-2 rounded-xl bg-white border border-rosegold/40 text-espresso focus:outline-none focus:border-sbuxgreen"
+            placeholder="1x Kaffee, Matcha & Kuchen – Für deine verdiente Auszeit"
+          />
+        </div>
+
+        <div>
+          <label for="input-message" class="block text-xs font-semibold text-cocoa mb-1">
+            Persönliche Geburtstagsnachricht
+          </label>
+          <textarea
+            id="input-message"
+            rows="2"
+            class="w-full px-3.5 py-2 rounded-xl bg-white border border-rosegold/40 text-espresso focus:outline-none focus:border-sbuxgreen"
+            placeholder="Alles Liebe zum Geburtstag..."
+          ></textarea>
+        </div>
+
+        <!-- Inline Status Feedback -->
+        <div
+          id="modal-feedback"
+          class="hidden px-3.5 py-2 rounded-xl bg-sbuxgreen/10 border border-sbuxgreen/35 text-sbuxdark text-xs font-semibold"
+        ></div>
+
+        <!-- Live Preview & Replay Controls -->
+        <div class="flex flex-wrap items-center gap-2 pt-1">
+          <button
+            type="submit"
+            class="flex-1 px-4 py-2.5 rounded-xl bg-espresso hover:bg-cocoa text-white font-semibold text-xs sm:text-sm transition cursor-pointer"
+          >
+            ✨ Änderungen übernehmen
+          </button>
+          <button
+            id="replay-experience-btn"
+            type="button"
+            class="px-3.5 py-2.5 rounded-xl bg-blush hover:bg-softpink/40 text-espresso font-semibold text-xs transition cursor-pointer"
+          >
+            🔄 Von vorne abspielen
+          </button>
+        </div>
+
+        <!-- Export Ready-to-Send Options -->
+        <div class="pt-3.5 border-t border-rosegold/25 space-y-2.5">
+          <p class="text-[11px] font-bold uppercase tracking-wider text-cocoa">
+            An Simona senden (⚙️ Einstellungs-Button wird automatisch entfernt):
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <button
+              id="download-html-btn"
+              type="button"
+              class="px-4 py-2.5 rounded-xl bg-sbuxgreen hover:bg-sbuxdark text-white font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer shadow-sm"
+            >
+              <span>⬇️</span> Fertige HTML-Datei herunterladen
+            </button>
+            <button
+              id="copy-share-link-btn"
+              type="button"
+              class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#E6C55A] hover:brightness-105 text-sbuxdark font-bold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer shadow-sm"
+            >
+              <span>🔗</span> Teilbaren Link kopieren
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * ============================================================================
+     * SIMONAS VIP-GEBURTSTAGSGESCHENK — HIMMELS-FEIER & INTERAKTIVE LOGIK
+     * ============================================================================
+     */
+
+    /* CONFIG_START */
+    const DEFAULT_CONFIG = {
+      recipientName: "Simona",
+      senderName: "Abdel",
+      cardHeadline: "1x Kaffee, Matcha & Kuchen – Für deine verdiente Auszeit",
+      cardNumber: "6354 1578 6138 8115",
+      pinNumber: "35736922",
+      personalMessage: "Alles Liebe zum Geburtstag an meine liebste Freundin bei der Arbeit! Danke, dass du immer so herzlich bist, für all unser Lachen und dafür, dass ich dir meine Geschichten und Geheimnisse anvertrauen kann. Gönn dir deinen Lieblingskaffee, Matcha & Kuchen auf mich! 💖",
+      dodgesRequired: 5,
+      locked: false
+    };
+    /* CONFIG_END */
+
+    // Capture pristine initial HTML template before DOM mutations for clean standalone exports
+    const PRISTINE_HTML_TEMPLATE = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+
+    // Active runtime configuration
+    let config = { ...DEFAULT_CONFIG };
+
+    // 5 charming German speech bubble messages shown during the 5 playful button glides
+    const SPEECH_MESSAGES = [
+      "Ups! Zu schnell! Versuch's nochmal ✨",
+      "Fast erwischt! Heute wird nicht gehetzt 🎂",
+      "Erst wird frisch gebrüht... ☕",
+      "Noch ein kleiner Hüpfer für das Geburtstagskind! 🌸",
+      "Gleich hast du ihn... 💖"
+    ];
+
+    // Runtime state
+    let dodgeCount = 0;
+    let isUnlocked = false;
+    let lastDodgeTime = 0;
+
+    // DOM references
+    const buttonArena = document.getElementById("button-arena");
+    const runawayBtn = document.getElementById("runaway-btn");
+    const speechBubble = document.getElementById("speech-bubble");
+    const speechBubbleText = document.getElementById("speech-bubble-text");
+    const dodgeDotsContainer = document.getElementById("dodge-dots");
+    const reopenPopupBar = document.getElementById("reopen-popup-bar");
+    const couponModal = document.getElementById("coupon-modal");
+    const starbucksCard = document.getElementById("starbucks-card");
+    const cardSheen = document.getElementById("card-sheen");
+
+    /**
+     * Format 16-digit card number cleanly into groups of 4
+     */
+    function formatCardNumber(raw) {
+      const cleaned = String(raw || "").replace(/\s+/g, "");
+      if (/^\d{8,19}$/.test(cleaned)) {
+        return cleaned.replace(/(.{4})/g, "$1 ").trim();
+      }
+      return String(raw || "").trim() || "6354 1578 6138 8115";
+    }
+
+    /**
+     * Load optional overrides from URL query parameters
+     */
+    function loadConfigFromURL() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        if (params.has("name") && params.get("name").trim()) {
+          config.recipientName = params.get("name").trim();
+        }
+        if (params.has("sender") && params.get("sender").trim()) {
+          config.senderName = params.get("sender").trim();
+        }
+        if (params.has("title") && params.get("title").trim()) {
+          config.cardHeadline = params.get("title").trim();
+        }
+        if (params.has("card") && params.get("card").trim()) {
+          config.cardNumber = formatCardNumber(params.get("card").trim());
+        }
+        if (params.has("pin") && params.get("pin").trim()) {
+          config.pinNumber = params.get("pin").trim();
+        }
+        if (params.has("msg") && params.get("msg").trim()) {
+          config.personalMessage = params.get("msg").trim();
+        }
+        if (params.has("locked") === "1" || config.locked === true) {
+          config.locked = true;
+        }
+      } catch (err) {
+        console.warn("Query param parse skipped:", err);
+      }
+    }
+
+    /**
+     * Render active configuration values into the UI
+     */
+    function applyConfigToDOM() {
+      const name = config.recipientName || "Simona";
+      const sender = config.senderName || "Abdel";
+
+      document.title = `Alles Gute zum Geburtstag, ${name}! ✨🎂`;
+      document.getElementById("hero-badge-name").textContent = name.toUpperCase();
+      document.getElementById("hero-headline-name").textContent = name;
+      document.getElementById("modal-ribbon-name").textContent = name.toUpperCase();
+      document.getElementById("card-recipient-name").textContent = name;
+      document.getElementById("card-sender-name").textContent = sender;
+
+      document.getElementById("card-headline").textContent = config.cardHeadline;
+      document.getElementById("card-message").textContent = `"${config.personalMessage}"`;
+      document.getElementById("display-card-number").textContent = formatCardNumber(config.cardNumber);
+      document.getElementById("display-pin-number").textContent = config.pinNumber;
+
+      // Hide gear button when locked=1 or exported
+      const gearBtn = document.getElementById("open-customizer-btn");
+      if (config.locked) {
+        gearBtn.classList.add("hidden");
+      } else {
+        gearBtn.classList.remove("hidden");
+      }
+
+      renderProgressDots();
+    }
+
+    /**
+     * Render cute progress dots below the arena
+     */
+    function renderProgressDots() {
+      dodgeDotsContainer.innerHTML = "";
+      const total = Math.max(0, config.dodgesRequired);
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement("span");
+        const completed = i < dodgeCount;
+        dot.className = completed
+          ? "w-2.5 h-2.5 rounded-full bg-sbuxgreen scale-110 transition-all duration-300"
+          : "w-2 h-2 rounded-full bg-rosegold/35 transition-all duration-300";
+        dodgeDotsContainer.appendChild(dot);
+      }
+    }
+
+    /**
+     * Animate Today's VIP Birthday Agenda checklist items one by one
+     */
+    function runAgendaAnimation() {
+      const items = document.querySelectorAll("#agenda-list .agenda-item");
+      const statusPill = document.getElementById("agenda-status-pill");
+      statusPill.textContent = "Wird vorbereitet...";
+
+      items.forEach((item, idx) => {
+        item.classList.remove("visible", "checked");
+        setTimeout(() => {
+          item.classList.add("visible");
+          setTimeout(() => {
+            item.classList.add("checked");
+            if (idx === items.length - 1) {
+              statusPill.textContent = "Alles bereit ✨";
+            }
+          }, 240);
+        }, 280 + idx * 420);
+      });
+    }
+
+    /**
+     * Position the floating speech bubble cleanly right above the button,
+     * clamped safely inside the arena boundaries so it never clips.
+     */
+    function positionSpeechBubble(btnLeft, btnTop, btnWidth) {
+      speechBubble.classList.remove("hidden");
+      const arenaWidth = buttonArena.clientWidth;
+      const bubbleWidth = speechBubble.offsetWidth || 210;
+      const bubbleHeight = speechBubble.offsetHeight || 36;
+
+      let targetX = btnLeft + btnWidth / 2 - bubbleWidth / 2;
+      targetX = Math.max(10, Math.min(arenaWidth - bubbleWidth - 10, targetX));
+
+      let targetY = btnTop - bubbleHeight - 12;
+      if (targetY < 8) {
+        targetY = btnTop + runawayBtn.offsetHeight + 12;
+      }
+
+      speechBubble.style.left = `${Math.round(targetX)}px`;
+      speechBubble.style.top = `${Math.round(targetY)}px`;
+    }
+
+    /**
+     * Playful Dodging Gift Button Logic:
+     * Glides away 5 times displaying the 5 speech bubbles, and on the 6th step
+     * transforms into the glowing Starbucks Emerald & Gold VIP button!
+     */
+    function handlePlayfulDodge(pointerClientX, pointerClientY) {
+      if (isUnlocked) return;
+
+      const now = Date.now();
+      if (now - lastDodgeTime < 160) return;
+      lastDodgeTime = now;
+
+      // On the 6th step (after 5 glides), transform into the Starbucks VIP Gift Card button
+      if (dodgeCount >= config.dodgesRequired) {
+        unlockStarbucksButton();
+        return;
+      }
+
+      dodgeCount++;
+      renderProgressDots();
+
+      const arenaWidth = buttonArena.clientWidth;
+      const arenaHeight = buttonArena.clientHeight;
+      const btnWidth = runawayBtn.offsetWidth;
+      const btnHeight = runawayBtn.offsetHeight;
+
+      const sidePad = 14;
+      const topPad = 56;
+      const bottomPad = 16;
+
+      const minX = sidePad;
+      const maxX = Math.max(sidePad, arenaWidth - btnWidth - sidePad);
+      const minY = topPad;
+      const maxY = Math.max(topPad, arenaHeight - btnHeight - bottomPad);
+
+      // Anchor button at its current centered coordinates before first glide
+      if (runawayBtn.style.position !== "absolute") {
+        const arenaRect = buttonArena.getBoundingClientRect();
+        const btnRect = runawayBtn.getBoundingClientRect();
+        runawayBtn.style.position = "absolute";
+        runawayBtn.style.left = `${Math.round(btnRect.left - arenaRect.left)}px`;
+        runawayBtn.style.top = `${Math.round(btnRect.top - arenaRect.top)}px`;
+        void runawayBtn.offsetWidth;
+      }
+
+      const currentLeft = parseFloat(runawayBtn.style.left) || (arenaWidth - btnWidth) / 2;
+      const currentTop = parseFloat(runawayBtn.style.top) || (arenaHeight - btnHeight) / 2;
+
+      const arenaRect = buttonArena.getBoundingClientRect();
+      const relX = typeof pointerClientX === "number"
+        ? pointerClientX - arenaRect.left
+        : currentLeft + btnWidth / 2;
+      const relY = typeof pointerClientY === "number"
+        ? pointerClientY - arenaRect.top
+        : currentTop + btnHeight / 2;
+
+      let bestX = minX;
+      let bestY = minY;
+      let bestScore = -1;
+
+      for (let i = 0; i < 16; i++) {
+        const candX = minX + Math.random() * (maxX - minX);
+        const candY = minY + Math.random() * (maxY - minY);
+        const candCenterX = candX + btnWidth / 2;
+        const candCenterY = candY + btnHeight / 2;
+
+        const distPointer = Math.hypot(candCenterX - relX, candCenterY - relY);
+        const distCurrent = Math.hypot(candX - currentLeft, candY - currentTop);
+
+        if (distCurrent < 45 && maxX - minX > 70) continue;
+
+        const score = distPointer * 1.35 + distCurrent;
+        if (score > bestScore) {
+          bestScore = score;
+          bestX = candX;
+          bestY = candY;
+        }
+      }
+
+      runawayBtn.style.left = `${Math.round(bestX)}px`;
+      runawayBtn.style.top = `${Math.round(bestY)}px`;
+
+      // Show speech bubbles 1..5 corresponding to glides 1..5
+      const msgIndex = Math.min(dodgeCount - 1, SPEECH_MESSAGES.length - 1);
+      speechBubbleText.textContent = SPEECH_MESSAGES[msgIndex];
+      positionSpeechBubble(bestX, bestY, btnWidth);
+    }
+
+    /**
+     * Transform button on the 6th step into glowing Starbucks Emerald & Gold button
+     */
+    function unlockStarbucksButton() {
+      isUnlocked = true;
+
+      runawayBtn.textContent = "☕ Deinen Starbucks-Gutschein öffnen ✨";
+      runawayBtn.className =
+        "z-20 starbucks-unlock-btn animate-pulse-soft px-6 py-4 sm:px-8 sm:py-4 rounded-full font-bold text-sm sm:text-base text-white tracking-wide cursor-pointer whitespace-nowrap";
+
+      const arenaWidth = buttonArena.clientWidth;
+      const arenaHeight = buttonArena.clientHeight;
+      const btnWidth = runawayBtn.offsetWidth;
+      const btnHeight = runawayBtn.offsetHeight;
+
+      const centerX = Math.max(12, Math.round((arenaWidth - btnWidth) / 2));
+      const centerY = Math.max(54, Math.round((arenaHeight - btnHeight) / 2 + 12));
+
+      runawayBtn.style.position = "absolute";
+      runawayBtn.style.left = `${centerX}px`;
+      runawayBtn.style.top = `${centerY}px`;
+
+      speechBubbleText.textContent = `Bereit für dich, ${config.recipientName || "Simona"}! 🎉`;
+      positionSpeechBubble(centerX, centerY, btnWidth);
+
+      document.getElementById("arena-subtext").textContent =
+        "Freigeschaltet! Tippe auf den leuchtenden Starbucks-Button, um deinen Gutschein zu öffnen 💖";
+      reopenPopupBar.classList.remove("hidden");
+
+      // Mini sparkle burst on transformation
+      const rect = runawayBtn.getBoundingClientRect();
+      spawnConfettiBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 42, -Math.PI / 2, Math.PI);
+    }
+
+    /**
+     * Open the Grand Coupon Pop-Up Modal & Launch Balloons, Flowers, Stars + Flying Unicorns with Princess Kisses!
+     */
+    function openCouponModal() {
+      couponModal.classList.remove("hidden");
+      couponModal.classList.add("flex");
+      couponModal.scrollTop = 0;
+
+      // Re-trigger smooth spring animation on modal card
+      const modalPanel = document.getElementById("coupon-modal-panel");
+      modalPanel.classList.remove("animate-modal-spring");
+      void modalPanel.offsetWidth;
+      modalPanel.classList.add("animate-modal-spring");
+
+      triggerGrandPopperExplosion();
+      spawnSkyWave(14);
+      spawnUnicornSquad(3);
+    }
+
+    function closeCouponModal() {
+      couponModal.classList.add("hidden");
+      couponModal.classList.remove("flex");
+    }
+
+    function revealStarbucksCoupon() {
+      if (!isUnlocked) return;
+      openCouponModal();
+    }
+
+    document.getElementById("close-coupon-modal-btn").addEventListener("click", closeCouponModal);
+    couponModal.addEventListener("click", (e) => {
+      if (e.target === couponModal) closeCouponModal();
+    });
+    document.getElementById("reopen-popup-btn").addEventListener("click", openCouponModal);
+
+    // Desktop hover trigger
+    runawayBtn.addEventListener("mouseenter", (e) => {
+      if (!isUnlocked) {
+        handlePlayfulDodge(e.clientX, e.clientY);
+      }
+    });
+
+    // Subtle proximity detection inside arena
+    buttonArena.addEventListener("mousemove", (e) => {
+      if (isUnlocked) return;
+      const btnRect = runawayBtn.getBoundingClientRect();
+      const buffer = 16;
+      const nearX = e.clientX >= btnRect.left - buffer && e.clientX <= btnRect.right + buffer;
+      const nearY = e.clientY >= btnRect.top - buffer && e.clientY <= btnRect.bottom + buffer;
+      if (nearX && nearY) {
+        handlePlayfulDodge(e.clientX, e.clientY);
+      }
+    });
+
+    // Mobile touch trigger
+    runawayBtn.addEventListener(
+      "touchstart",
+      (e) => {
+        if (!isUnlocked) {
+          e.preventDefault();
+          const touch = e.touches && e.touches[0];
+          handlePlayfulDodge(touch ? touch.clientX : undefined, touch ? touch.clientY : undefined);
+        }
+      },
+      { passive: false }
+    );
+
+    // Click handler
+    runawayBtn.addEventListener("click", (e) => {
+      if (!isUnlocked) {
+        handlePlayfulDodge(e.clientX, e.clientY);
+      } else {
+        revealStarbucksCoupon();
+      }
+    });
+
+    // ============================================================================
+    // INTERACTIVE 3D TILT & SPECULAR LIGHT GLARE ON STARBUCKS VIP CARD
+    // ============================================================================
+    function updateCardTilt(clientX, clientY) {
+      const rect = starbucksCard.getBoundingClientRect();
+      const relX = clientX - rect.left;
+      const relY = clientY - rect.top;
+
+      const percentX = Math.max(0, Math.min(1, relX / rect.width));
+      const percentY = Math.max(0, Math.min(1, relY / rect.height));
+
+      const rotateY = (percentX - 0.5) * 14;
+      const rotateX = (0.5 - percentY) * 14;
+
+      starbucksCard.style.transform = `rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
+      cardSheen.style.setProperty("--sheen-x", `${(percentX * 100).toFixed(1)}%`);
+      cardSheen.style.setProperty("--sheen-y", `${(percentY * 100).toFixed(1)}%`);
+    }
+
+    function resetCardTilt() {
+      starbucksCard.style.transform = "rotateX(0deg) rotateY(0deg)";
+    }
+
+    starbucksCard.addEventListener("mousemove", (e) => updateCardTilt(e.clientX, e.clientY));
+    starbucksCard.addEventListener("mouseleave", resetCardTilt);
+    starbucksCard.addEventListener(
+      "touchmove",
+      (e) => {
+        if (e.touches && e.touches[0]) {
+          updateCardTilt(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      },
+      { passive: true }
+    );
+    starbucksCard.addEventListener("touchend", resetCardTilt);
+
+    // ============================================================================
+    // ONE-CLICK CLIPBOARD COPY WITH "Copied! ✓" TOAST FEEDBACK
+    // ============================================================================
+    const copyToast = document.getElementById("copy-toast");
+    const copyToastText = document.getElementById("copy-toast-text");
+    let toastTimeout = null;
+
+    function showCopyToast(label) {
+      copyToastText.textContent = label || "Kopiert! ✓";
+      copyToast.classList.remove("opacity-0", "translate-y-2");
+      copyToast.classList.add("opacity-100", "translate-y-0");
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        copyToast.classList.add("opacity-0", "translate-y-2");
+        copyToast.classList.remove("opacity-100", "translate-y-0");
+      }, 2100);
+    }
+
+    function copyTextToClipboard(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      textarea.style.top = "0";
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      let ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (err) {
+        ok = false;
+      }
+      document.body.removeChild(textarea);
+      return ok;
+    }
+
+    const copyCardBtn = document.getElementById("copy-card-btn");
+    copyCardBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const rawCardDigits = formatCardNumber(config.cardNumber).replace(/\s+/g, "");
+      copyTextToClipboard(rawCardDigits);
+      copyCardBtn.textContent = "Kopiert! ✓";
+      showCopyToast("Kartennummer kopiert! ✓");
+      setTimeout(() => {
+        copyCardBtn.textContent = "Kopieren";
+      }, 2000);
+    });
+
+    const copyPinBtn = document.getElementById("copy-pin-btn");
+    copyPinBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      copyTextToClipboard(config.pinNumber);
+      copyPinBtn.textContent = "Kopiert! ✓";
+      showCopyToast("PIN-Code kopiert! ✓");
+      setTimeout(() => {
+        copyPinBtn.textContent = "Kopieren";
+      }, 2000);
+    });
+
+    // ============================================================================
+    // MULTI-LAYERED ENTRANCE & SKY CELEBRATION ENGINE (HIGH-FPS HTML5 CANVAS)
+    // ============================================================================
+    const canvas = document.getElementById("celebration-canvas");
+    const ctx = canvas.getContext("2d");
+
+    const CONFETTI_COLORS = [
+      "#D4AF37", // Warm Metallic Gold
+      "#F6E299", // Champagne Gold
+      "#E8998D", // Rose Gold
+      "#F4ACB7", // Blush Pink
+      "#006241", // Starbucks Emerald
+      "#FFF9F5", // Cream Pearl
+      "#FF8FA3"  // Coral Rose
+    ];
+
+    const BALLOON_PALETTES = [
+      { top: "#FFD6DF", mid: "#F4ACB7", dark: "#D87A8A" }, // Blush Pink
+      { top: "#FBE5D8", mid: "#E8998D", dark: "#C76B5E" }, // Metallic Rose-Gold
+      { top: "#FFF3C4", mid: "#E6C25A", dark: "#B89128" }, // Metallic Champagne Gold
+      { top: "#D9F0E6", mid: "#40916C", dark: "#1E3932" }, // Soft Sage & Starbucks Emerald
+      { top: "#FFFDF9", mid: "#F7E6D4", dark: "#D4B89C" }  // Pearl Champagne
+    ];
+
+    let canopyStars = [];
+    let confettiParticles = [];
+    let driftingPetals = [];
+    let risingSkyItems = [];
+    let flyingUnicorns = [];
+    let floatingKisses = [];
+    let skySpawnerInterval = null;
+    let lastFrameTime = performance.now();
+
+    function resizeCelebrationCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initStarryCanopy();
+    }
+
+    /**
+     * 1. Twinkling Starry Canopy along the upper sky
+     */
+    function initStarryCanopy() {
+      const count = Math.min(34, Math.max(16, Math.floor(canvas.width / 42)));
+      canopyStars = [];
+      for (let i = 0; i < count; i++) {
+        canopyStars.push({
+          x: Math.random() * canvas.width,
+          y: 10 + Math.random() * Math.min(150, canvas.height * 0.2),
+          radius: 1.8 + Math.random() * 3.4,
+          phase: Math.random() * Math.PI * 2,
+          speed: 0.025 + Math.random() * 0.035,
+          color: Math.random() > 0.35 ? "#D4AF37" : "#F4ACB7"
+        });
+      }
+    }
+
+    /**
+     * 2. Birthday Popper Confetti Burst (Ribbons, Tumbling Metallic Flakes & Sparkles)
+     */
+    function spawnConfettiBurst(originX, originY, count, baseAngle, spreadAngle, powerScale = 1) {
+      for (let i = 0; i < count; i++) {
+        const angle = baseAngle + (Math.random() - 0.5) * spreadAngle;
+        const speed = (6 + Math.random() * 14) * powerScale;
+        const kindRoll = Math.random();
+        const kind = kindRoll < 0.32 ? "ribbon" : kindRoll < 0.85 ? "flake" : "star";
+
+        confettiParticles.push({
+          x: originX,
+          y: originY,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          gravity: 0.14 + Math.random() * 0.07,
+          drag: 0.968,
+          terminalVy: 1.3 + Math.random() * 1.4,
+          swayFreq: 0.03 + Math.random() * 0.04,
+          swayAmp: 0.4 + Math.random() * 0.9,
+          swayPhase: Math.random() * Math.PI * 2,
+          rotation: Math.random() * Math.PI * 2,
+          rotSpeed: (Math.random() - 0.5) * 0.18,
+          flipPhase: Math.random() * Math.PI * 2,
+          flipSpeed: 0.08 + Math.random() * 0.12,
+          size: 6 + Math.random() * 6,
+          color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
+          kind,
+          alpha: 1,
+          life: 0,
+          maxLife: 260 + Math.random() * 140
+        });
+      }
+    }
+
+    /**
+     * Immediate Twin-Cannon Popper Explosion on Load / Reveal
+     */
+    function triggerGrandPopperExplosion() {
+      const w = canvas.width;
+      const h = canvas.height;
+      const isMobile = w < 640;
+      const power = isMobile ? 0.86 : 1.08;
+
+      // Bottom-left party popper cannon aiming high up-right
+      spawnConfettiBurst(28, h - 24, isMobile ? 65 : 95, -Math.PI * 0.34, 0.68, power);
+      // Bottom-right party popper cannon aiming high up-left
+      spawnConfettiBurst(w - 28, h - 24, isMobile ? 65 : 95, -Math.PI * 0.66, 0.68, power);
+      // Grand central celebratory shower burst
+      spawnConfettiBurst(w * 0.5, h * 0.32, isMobile ? 55 : 80, -Math.PI * 0.5, Math.PI * 1.65, power * 0.82);
+    }
+
+    /**
+     * 3. Continuous Drifting Cherry-Blossom Petals & Golden Shimmer Dust
+     */
+    function initDriftingPetals() {
+      const count = canvas.width < 640 ? 16 : 26;
+      driftingPetals = [];
+      for (let i = 0; i < count; i++) {
+        driftingPetals.push(createDriftingPetal(Math.random() * canvas.height));
+      }
+    }
+
+    function createDriftingPetal(startY = -20) {
+      const isGoldDust = Math.random() < 0.32;
+      return {
+        x: Math.random() * canvas.width,
+        y: startY,
+        vy: isGoldDust ? 0.45 + Math.random() * 0.55 : 0.65 + Math.random() * 0.85,
+        vx: (Math.random() - 0.5) * 0.4,
+        swayPhase: Math.random() * Math.PI * 2,
+        swaySpeed: 0.018 + Math.random() * 0.02,
+        swayAmp: 0.6 + Math.random() * 1.1,
+        rotation: Math.random() * Math.PI * 2,
+        rotSpeed: (Math.random() - 0.5) * 0.03,
+        size: isGoldDust ? 2.2 + Math.random() * 2.2 : 6 + Math.random() * 5,
+        isGoldDust,
+        color: isGoldDust ? "#D4AF37" : Math.random() > 0.45 ? "#F4ACB7" : "#FAD2DC",
+        alpha: 0.45 + Math.random() * 0.4
+      };
+    }
+
+    /**
+     * 4. Rising Balloons, Blooming Flowers & Glowing Stars (Bottom-to-Top)
+     */
+    function spawnRisingSkyItem(customX, customY) {
+      const w = canvas.width;
+      const h = canvas.height;
+      const x = typeof customX === "number" ? customX : 28 + Math.random() * (w - 56);
+      const y = typeof customY === "number" ? customY : h + 45 + Math.random() * 50;
+
+      const roll = Math.random();
+      const type = roll < 0.44 ? "balloon" : roll < 0.78 ? "flower" : "star";
+
+      risingSkyItems.push({
+        type,
+        x,
+        y,
+        vy: -(1.15 + Math.random() * 1.25),
+        swayPhase: Math.random() * Math.PI * 2,
+        swaySpeed: 0.02 + Math.random() * 0.02,
+        swayAmp: 0.55 + Math.random() * 0.9,
+        rotation: (Math.random() - 0.5) * 0.3,
+        rotSpeed: type === "balloon" ? (Math.random() - 0.5) * 0.006 : (Math.random() - 0.5) * 0.022,
+        scale: 0.78 + Math.random() * 0.42,
+        palette: BALLOON_PALETTES[Math.floor(Math.random() * BALLOON_PALETTES.length)],
+        flowerVariant: Math.floor(Math.random() * 3), // 0: cherry blossom, 1: rose, 2: tulip
+        alpha: 0.94
+      });
+    }
+
+    function spawnSkyWave(count = 12, originX, originY) {
+      for (let i = 0; i < count; i++) {
+        setTimeout(() => {
+          const jitterX = typeof originX === "number" ? originX + (Math.random() - 0.5) * 140 : undefined;
+          const jitterY = typeof originY === "number" ? originY + (Math.random() - 0.5) * 60 : undefined;
+          spawnRisingSkyItem(jitterX, jitterY);
+        }, i * 95);
+      }
+    }
+
+    function startContinuousSkyCelebration() {
+      // Initial wave 0.7s after page load right after the popper cannons burst
+      setTimeout(() => {
+        spawnSkyWave(canvas.width < 640 ? 12 : 18);
+      }, 700);
+
+      // Gentle ongoing spawn so balloons, flowers & stars keep floating toward the starry canopy
+      if (skySpawnerInterval) clearInterval(skySpawnerInterval);
+      skySpawnerInterval = setInterval(() => {
+        if (risingSkyItems.length < (canvas.width < 640 ? 14 : 24)) {
+          spawnRisingSkyItem();
+        }
+      }, 1350);
+    }
+
+    // ============================================================================
+    // CUSTOM PROCEDURAL CANVAS RENDERERS (STARS, BALLOONS, BLOOMING FLOWERS)
+    // ============================================================================
+    function drawFourPointStar(cx, cy, outerR, innerR, color, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      ctx.shadowColor = color;
+      ctx.shadowBlur = 8;
+      ctx.beginPath();
+      for (let i = 0; i < 8; i++) {
+        const r = i % 2 === 0 ? outerR : innerR;
+        const a = (i * Math.PI) / 4;
+        const px = cx + Math.cos(a) * r;
+        const py = cy + Math.sin(a) * r;
+        if (i === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function drawFivePointStar(cx, cy, outerR, innerR, color, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      ctx.shadowColor = "#FFE58F";
+      ctx.shadowBlur = 14;
+      ctx.beginPath();
+      for (let i = 0; i < 10; i++) {
+        const r = i % 2 === 0 ? outerR : innerR;
+        const a = (i * Math.PI) / 5 - Math.PI / 2;
+        const px = cx + Math.cos(a) * r;
+        const py = cy + Math.sin(a) * r;
+        if (i === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function drawGlossyBalloon(item) {
+      const rx = 20 * item.scale;
+      const ry = 25 * item.scale;
+
+      ctx.save();
+      ctx.translate(item.x, item.y);
+      ctx.rotate(item.rotation);
+      ctx.globalAlpha = item.alpha;
+
+      // Swaying S-curve ribbon string trailing below
+      ctx.beginPath();
+      ctx.moveTo(0, ry + 3);
+      const wave = Math.sin(item.swayPhase * 1.4) * 7 * item.scale;
+      ctx.bezierCurveTo(wave, ry + 18 * item.scale, -wave, ry + 34 * item.scale, wave * 0.6, ry + 52 * item.scale);
+      ctx.strokeStyle = "rgba(212, 175, 55, 0.72)";
+      ctx.lineWidth = 1.3;
+      ctx.stroke();
+
+      // Little balloon knot triangle
+      ctx.fillStyle = item.palette.dark;
+      ctx.beginPath();
+      ctx.moveTo(0, ry - 1);
+      ctx.lineTo(-4 * item.scale, ry + 4 * item.scale);
+      ctx.lineTo(4 * item.scale, ry + 4 * item.scale);
+      ctx.closePath();
+      ctx.fill();
+
+      // Glossy radial gradient body
+      const grad = ctx.createRadialGradient(-rx * 0.32, -ry * 0.35, 2, 0, 0, ry * 1.15);
+      grad.addColorStop(0, item.palette.top);
+      grad.addColorStop(0.55, item.palette.mid);
+      grad.addColorStop(1, item.palette.dark);
+
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.ellipse(0, 0, rx, ry, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Specular crescent highlight
+      ctx.fillStyle = "rgba(255, 255, 255, 0.45)";
+      ctx.beginPath();
+      ctx.ellipse(-rx * 0.36, -ry * 0.32, rx * 0.22, ry * 0.36, -0.45, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.restore();
+    }
+
+    function drawBloomingFlower(item) {
+      const s = item.scale;
+      ctx.save();
+      ctx.translate(item.x, item.y);
+      ctx.rotate(item.rotation);
+      ctx.globalAlpha = item.alpha;
+
+      if (item.flowerVariant === 0) {
+        // 5-Petal Cherry Blossom
+        const petalColor = "#F8BBD0";
+        for (let i = 0; i < 5; i++) {
+          ctx.save();
+          ctx.rotate((i * Math.PI * 2) / 5);
+          ctx.fillStyle = petalColor;
+          ctx.beginPath();
+          ctx.moveTo(0, 0);
+          ctx.bezierCurveTo(-7 * s, -9 * s, -5 * s, -19 * s, 0, -17 * s);
+          ctx.bezierCurveTo(5 * s, -19 * s, 7 * s, -9 * s, 0, 0);
+          ctx.fill();
+          ctx.restore();
+        }
+        // Golden center
+        ctx.fillStyle = "#D4AF37";
+        ctx.beginPath();
+        ctx.arc(0, 0, 3.6 * s, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (item.flowerVariant === 1) {
+        // Layered Rose-Gold / Coral Rose
+        const layers = [
+          { r: 14 * s, color: "#E8998D" },
+          { r: 10 * s, color: "#F4ACB7" },
+          { r: 6 * s, color: "#FFD6DF" }
+        ];
+        layers.forEach((layer, idx) => {
+          for (let p = 0; p < 5; p++) {
+            const a = (p * Math.PI * 2) / 5 + idx * 0.5;
+            ctx.fillStyle = layer.color;
+            ctx.beginPath();
+            ctx.arc(Math.cos(a) * layer.r * 0.38, Math.sin(a) * layer.r * 0.38, layer.r * 0.62, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        });
+      } else {
+        // Pastel Tulip with Emerald Leaf Stem
+        ctx.strokeStyle = "#2D6A4F";
+        ctx.lineWidth = 2 * s;
+        ctx.beginPath();
+        ctx.moveTo(0, 6 * s);
+        ctx.lineTo(0, 22 * s);
+        ctx.stroke();
+
+        ctx.fillStyle = "#40916C";
+        ctx.beginPath();
+        ctx.ellipse(5 * s, 16 * s, 6 * s, 2.6 * s, -0.5, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "#F48FB1";
+        ctx.beginPath();
+        ctx.moveTo(-10 * s, -4 * s);
+        ctx.quadraticCurveTo(-11 * s, 10 * s, 0, 10 * s);
+        ctx.quadraticCurveTo(11 * s, 10 * s, 10 * s, -4 * s);
+        ctx.lineTo(5 * s, -12 * s);
+        ctx.lineTo(0, -6 * s);
+        ctx.lineTo(-5 * s, -12 * s);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      ctx.restore();
+    }
+
+    /**
+     * 5. Flying Winged Unicorn with a Princess Riding & Blowing Kisses
+     */
+    function spawnFlyingUnicorn(dir = 1, delayMs = 0) {
+      setTimeout(() => {
+        const w = canvas.width;
+        const h = canvas.height;
+        const isMobile = w < 640;
+        const scale = isMobile ? 0.72 + Math.random() * 0.16 : 0.92 + Math.random() * 0.22;
+        const startX = dir === 1 ? -110 * scale : w + 110 * scale;
+        const baseY = h * (0.2 + Math.random() * 0.48);
+
+        flyingUnicorns.push({
+          dir,
+          x: startX,
+          baseY,
+          y: baseY,
+          vx: dir * (isMobile ? 2.5 + Math.random() * 0.9 : 3.2 + Math.random() * 1.1),
+          wavePhase: Math.random() * Math.PI * 2,
+          waveSpeed: 0.032 + Math.random() * 0.015,
+          waveAmp: isMobile ? 16 : 24,
+          wingPhase: Math.random() * Math.PI * 2,
+          gallopPhase: Math.random() * Math.PI * 2,
+          scale,
+          kissTimer: 10
+        });
+      }, delayMs);
+    }
+
+    function spawnUnicornSquad(count = 3) {
+      for (let i = 0; i < count; i++) {
+        const dir = i % 2 === 0 ? 1 : -1;
+        spawnFlyingUnicorn(dir, i * 650);
+      }
+    }
+
+    function spawnFloatingKiss(x, y, dir) {
+      floatingKisses.push({
+        x,
+        y,
+        vx: dir * (0.45 + Math.random() * 0.75) + (Math.random() - 0.5) * 0.6,
+        vy: -(1.1 + Math.random() * 0.95),
+        swayPhase: Math.random() * Math.PI * 2,
+        swaySpeed: 0.045 + Math.random() * 0.03,
+        scale: 0.78 + Math.random() * 0.42,
+        rotation: (Math.random() - 0.5) * 0.35,
+        isLips: Math.random() < 0.62,
+        alpha: 1,
+        life: 0,
+        maxLife: 135 + Math.random() * 45
+      });
+    }
+
+    function drawFloatingKiss(k) {
+      ctx.save();
+      ctx.translate(k.x, k.y);
+      ctx.rotate(k.rotation);
+      ctx.scale(k.scale, k.scale);
+      ctx.globalAlpha = Math.max(0, k.alpha);
+
+      // Soft warm pink glow halo
+      ctx.shadowColor = "rgba(255, 92, 138, 0.75)";
+      ctx.shadowBlur = 12;
+
+      if (k.isLips) {
+        // Stylized glossy rose-crimson kiss mark
+        ctx.fillStyle = "#FF4D79";
+        // Upper Cupid's bow lip
+        ctx.beginPath();
+        ctx.moveTo(-12, 0);
+        ctx.quadraticCurveTo(-6, -8, 0, -3.5);
+        ctx.quadraticCurveTo(6, -8, 12, 0);
+        ctx.quadraticCurveTo(0, 2.5, -12, 0);
+        ctx.fill();
+
+        // Lower plump lip
+        ctx.fillStyle = "#E62E6B";
+        ctx.beginPath();
+        ctx.moveTo(-11, 0.8);
+        ctx.quadraticCurveTo(0, 11.5, 11, 0.8);
+        ctx.quadraticCurveTo(0, 3.2, -11, 0.8);
+        ctx.fill();
+
+        // Glossy highlight
+        ctx.fillStyle = "rgba(255, 255, 255, 0.65)";
+        ctx.beginPath();
+        ctx.ellipse(-3.5, 4.2, 3, 1.1, -0.15, 0, Math.PI * 2);
+        ctx.fill();
+      } else {
+        // Glowing rose-pink floating heart
+        ctx.fillStyle = "#FF6B9D";
+        ctx.beginPath();
+        ctx.moveTo(0, 7);
+        ctx.bezierCurveTo(-12, -2, -9, -12, 0, -5);
+        ctx.bezierCurveTo(9, -12, 12, -2, 0, 7);
+        ctx.fill();
+      }
+
+      ctx.restore();
+    }
+
+    function drawFlyingUnicornWithPrincess(u) {
+      const s = u.scale;
+      const wingFlap = Math.sin(u.wingPhase);
+      const legSwing = Math.sin(u.gallopPhase);
+
+      ctx.save();
+      ctx.translate(u.x, u.y);
+      // Flip horizontally when flying right-to-left so unicorn & princess always face direction of flight
+      ctx.scale(u.dir * s, s);
+
+      // Soft magical aura behind unicorn & princess
+      const aura = ctx.createRadialGradient(0, -10, 8, 0, -10, 76);
+      aura.addColorStop(0, "rgba(255, 243, 214, 0.42)");
+      aura.addColorStop(0.6, "rgba(244, 172, 183, 0.16)");
+      aura.addColorStop(1, "rgba(255, 255, 255, 0)");
+      ctx.fillStyle = aura;
+      ctx.beginPath();
+      ctx.arc(0, -10, 76, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 1. Flowing Pastel Rainbow Tail
+      const tailColors = ["#F4ACB7", "#FFD180", "#FFF3B0", "#B8E0D2"];
+      tailColors.forEach((col, idx) => {
+        ctx.strokeStyle = col;
+        ctx.lineWidth = 4.5 - idx * 0.5;
+        ctx.lineCap = "round";
+        ctx.beginPath();
+        ctx.moveTo(-34, 2 + idx * 2);
+        ctx.bezierCurveTo(
+          -56,
+          -8 + wingFlap * 8 + idx * 3,
+          -66,
+          14 - wingFlap * 6 + idx * 3,
+          -82,
+          6 + wingFlap * 10 + idx * 3
+        );
+        ctx.stroke();
+      });
+
+      // 2. Back Legs (Galloping)
+      ctx.strokeStyle = "#F5ECE8";
+      ctx.lineWidth = 6.5;
+      ctx.lineCap = "round";
+      // Hind leg
+      ctx.beginPath();
+      ctx.moveTo(-24, 14);
+      ctx.lineTo(-34 - legSwing * 8, 34);
+      ctx.stroke();
+      // Front leg
+      ctx.beginPath();
+      ctx.moveTo(22, 12);
+      ctx.lineTo(36 + legSwing * 9, 28);
+      ctx.stroke();
+
+      // 3. Unicorn Body & Graceful Neck (Pearl White)
+      const bodyGrad = ctx.createLinearGradient(0, -24, 0, 22);
+      bodyGrad.addColorStop(0, "#FFFFFF");
+      bodyGrad.addColorStop(1, "#FCECE8");
+      ctx.fillStyle = bodyGrad;
+
+      // Torso
+      ctx.beginPath();
+      ctx.ellipse(-2, 6, 34, 17, -0.06, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Neck & Head
+      ctx.beginPath();
+      ctx.moveTo(18, 2);
+      ctx.quadraticCurveTo(26, -24, 38, -28);
+      ctx.quadraticCurveTo(54, -27, 56, -16);
+      ctx.quadraticCurveTo(54, -8, 41, -9);
+      ctx.quadraticCurveTo(33, 6, 24, 14);
+      ctx.closePath();
+      ctx.fill();
+
+      // 4. Pastel Rainbow Mane
+      const maneColors = ["#F4ACB7", "#E8998D", "#F6E299"];
+      maneColors.forEach((col, idx) => {
+        ctx.fillStyle = col;
+        ctx.beginPath();
+        ctx.arc(28 - idx * 4, -24 + idx * 6, 7 - idx * 0.6, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      // 5. Golden Spiral Unicorn Horn
+      const hornGrad = ctx.createLinearGradient(44, -27, 64, -46);
+      hornGrad.addColorStop(0, "#D4AF37");
+      hornGrad.addColorStop(0.5, "#FFF3B0");
+      hornGrad.addColorStop(1, "#D4AF37");
+      ctx.fillStyle = hornGrad;
+      ctx.beginPath();
+      ctx.moveTo(43, -26);
+      ctx.lineTo(65, -45);
+      ctx.lineTo(49, -22);
+      ctx.closePath();
+      ctx.fill();
+
+      // Unicorn Cute Eye & Rosy Cheek
+      ctx.strokeStyle = "#4A3531";
+      ctx.lineWidth = 1.8;
+      ctx.beginPath();
+      ctx.arc(44, -19, 3, 0.1 * Math.PI, 0.9 * Math.PI);
+      ctx.stroke();
+
+      ctx.fillStyle = "rgba(244, 143, 177, 0.55)";
+      ctx.beginPath();
+      ctx.arc(48, -14, 3.2, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 6. Front Galloping Legs & Golden Hooves
+      ctx.strokeStyle = "#FFFFFF";
+      ctx.lineWidth = 6.5;
+      ctx.beginPath();
+      ctx.moveTo(-18, 15);
+      ctx.lineTo(-22 + legSwing * 9, 36);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.moveTo(25, 11);
+      ctx.lineTo(41 - legSwing * 8, 24);
+      ctx.stroke();
+
+      // Golden hooves
+      ctx.fillStyle = "#D4AF37";
+      ctx.beginPath();
+      ctx.arc(-22 + legSwing * 9, 36, 3.3, 0, Math.PI * 2);
+      ctx.arc(41 - legSwing * 8, 24, 3.3, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 7. THE PRINCESS RIDING ON THE UNICORN'S BACK
+      // Golden saddle blanket
+      ctx.fillStyle = "#D4AF37";
+      ctx.beginPath();
+      ctx.roundRect(-14, -12, 22, 11, 5);
+      ctx.fill();
+
+      // Flowing Rose-Gold Princess Gown
+      const gownGrad = ctx.createLinearGradient(-16, -24, 6, 8);
+      gownGrad.addColorStop(0, "#F4ACB7");
+      gownGrad.addColorStop(0.55, "#E8998D");
+      gownGrad.addColorStop(1, "#D67A6E");
+      ctx.fillStyle = gownGrad;
+      ctx.beginPath();
+      ctx.moveTo(-4, -25);
+      ctx.quadraticCurveTo(-22, -8, -24, 5);
+      ctx.quadraticCurveTo(-8, 9, 8, 4);
+      ctx.quadraticCurveTo(4, -12, 1, -25);
+      ctx.closePath();
+      ctx.fill();
+
+      // Princess Flowing Golden-Chestnut Hair
+      ctx.fillStyle = "#8D5B4C";
+      ctx.beginPath();
+      ctx.moveTo(-3, -40);
+      ctx.quadraticCurveTo(-22, -36, -24, -18);
+      ctx.quadraticCurveTo(-14, -15, -7, -26);
+      ctx.closePath();
+      ctx.fill();
+
+      // Princess Head
+      ctx.fillStyle = "#FFE5D9";
+      ctx.beginPath();
+      ctx.arc(-1, -34, 7.5, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Cute Rosy Cheek & Happy Smile
+      ctx.fillStyle = "rgba(255, 117, 143, 0.5)";
+      ctx.beginPath();
+      ctx.arc(2.5, -32.5, 2.2, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Golden Princess Tiara
+      ctx.fillStyle = "#D4AF37";
+      ctx.beginPath();
+      ctx.moveTo(-6, -40);
+      ctx.lineTo(-4, -46);
+      ctx.lineTo(-1, -42);
+      ctx.lineTo(2, -46.5);
+      ctx.lineTo(4, -40);
+      ctx.closePath();
+      ctx.fill();
+
+      // Princess Raised Arm Blowing a Kiss toward her lips!
+      ctx.strokeStyle = "#FFE5D9";
+      ctx.lineWidth = 3.2;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(1, -22);
+      ctx.quadraticCurveTo(10, -25, 8, -32);
+      ctx.stroke();
+
+      // 8. Feathered Winged-Unicorn Wing (Flapping)
+      ctx.save();
+      ctx.translate(-2, -6);
+      ctx.rotate(-0.25 + wingFlap * 0.42);
+      const wingGrad = ctx.createLinearGradient(0, 0, -26, -34);
+      wingGrad.addColorStop(0, "#FFFDF9");
+      wingGrad.addColorStop(1, "#FAD2DC");
+      ctx.fillStyle = wingGrad;
+      ctx.strokeStyle = "rgba(212, 175, 55, 0.55)";
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo(-14, -14, -32, -32, -22, -38);
+      ctx.bezierCurveTo(-12, -34, -4, -22, 4, -12);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      ctx.restore();
+
+      ctx.restore();
+    }
+
+    /**
+     * Main 60FPS Animation Loop for the Sky Celebration Canvas
+     */
+    function animateCelebrationCanvas(now) {
+      const dt = Math.min(2, (now - lastFrameTime) / 16.67);
+      lastFrameTime = now;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Layer 1: Twinkling Starry Canopy at the Top
+      for (let i = 0; i < canopyStars.length; i++) {
+        const st = canopyStars[i];
+        st.phase += st.speed * dt;
+        const twinkleAlpha = 0.25 + ((Math.sin(st.phase) + 1) / 2) * 0.65;
+        drawFourPointStar(st.x, st.y, st.radius * 2.1, st.radius * 0.55, st.color, twinkleAlpha);
+      }
+
+      // Layer 2: Continuous Drifting Petals & Golden Shimmer Dust
+      for (let i = 0; i < driftingPetals.length; i++) {
+        const pt = driftingPetals[i];
+        pt.swayPhase += pt.swaySpeed * dt;
+        pt.x += (pt.vx + Math.sin(pt.swayPhase) * pt.swayAmp) * dt;
+        pt.y += pt.vy * dt;
+        pt.rotation += pt.rotSpeed * dt;
+
+        if (pt.y > canvas.height + 24) {
+          driftingPetals[i] = createDriftingPetal(-16);
+          continue;
+        }
+
+        ctx.save();
+        ctx.translate(pt.x, pt.y);
+        ctx.rotate(pt.rotation);
+        ctx.globalAlpha = pt.alpha;
+        ctx.fillStyle = pt.color;
+
+        if (pt.isGoldDust) {
+          ctx.shadowColor = "#D4AF37";
+          ctx.shadowBlur = 6;
+          ctx.beginPath();
+          ctx.arc(0, 0, pt.size, 0, Math.PI * 2);
+          ctx.fill();
+        } else {
+          ctx.beginPath();
+          ctx.moveTo(0, -pt.size);
+          ctx.bezierCurveTo(pt.size * 0.9, -pt.size * 0.4, pt.size * 0.8, pt.size * 0.8, 0, pt.size);
+          ctx.bezierCurveTo(-pt.size * 0.8, pt.size * 0.8, -pt.size * 0.9, -pt.size * 0.4, 0, -pt.size);
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+
+      // Layer 3: Rising Balloons, Blooming Flowers & Glowing Golden Stars
+      for (let i = risingSkyItems.length - 1; i >= 0; i--) {
+        const item = risingSkyItems[i];
+        item.swayPhase += item.swaySpeed * dt;
+        item.x += Math.sin(item.swayPhase) * item.swayAmp * dt;
+        item.y += item.vy * dt;
+        item.rotation += item.rotSpeed * dt;
+
+        // Softly dissolve as they reach the starry canopy at the very top
+        if (item.y < 110) {
+          item.alpha -= 0.014 * dt;
+        }
+
+        if (item.alpha <= 0 || item.y < -70) {
+          risingSkyItems.splice(i, 1);
+          continue;
+        }
+
+        if (item.type === "balloon") {
+          drawGlossyBalloon(item);
+        } else if (item.type === "flower") {
+          drawBloomingFlower(item);
+        } else {
+          drawFivePointStar(item.x, item.y, 12 * item.scale, 5.2 * item.scale, "#D4AF37", item.alpha);
+        }
+      }
+
+      // Layer 4: Flying Unicorns with Princesses & Floating Kisses
+      for (let i = flyingUnicorns.length - 1; i >= 0; i--) {
+        const u = flyingUnicorns[i];
+        u.wavePhase += u.waveSpeed * dt;
+        u.wingPhase += 0.16 * dt;
+        u.gallopPhase += 0.14 * dt;
+        u.x += u.vx * dt;
+        u.y = u.baseY + Math.sin(u.wavePhase) * u.waveAmp;
+
+        // Sparkling stardust trail behind the unicorn
+        if (Math.random() < 0.55) {
+          confettiParticles.push({
+            x: u.x - u.dir * 48 * u.scale + (Math.random() - 0.5) * 14,
+            y: u.y + (Math.random() - 0.5) * 18,
+            vx: -u.dir * (0.4 + Math.random() * 0.8),
+            vy: (Math.random() - 0.5) * 0.7,
+            gravity: 0.02,
+            drag: 0.96,
+            terminalVy: 0.8,
+            swayFreq: 0.04,
+            swayAmp: 0.3,
+            swayPhase: Math.random() * Math.PI * 2,
+            rotation: Math.random() * Math.PI * 2,
+            rotSpeed: 0.08,
+            flipPhase: 0,
+            flipSpeed: 0.05,
+            size: 4.5 + Math.random() * 3.5,
+            color: Math.random() > 0.4 ? "#D4AF37" : "#F4ACB7",
+            kind: "star",
+            alpha: 0.95,
+            life: 0,
+            maxLife: 45
+          });
+        }
+
+        // Princess blows floating kisses as she flies across the sky!
+        u.kissTimer -= dt;
+        if (u.kissTimer <= 0 && u.x > 40 && u.x < canvas.width - 40) {
+          u.kissTimer = 18 + Math.random() * 10;
+          const mouthX = u.x + u.dir * 12 * u.scale;
+          const mouthY = u.y - 34 * u.scale;
+          spawnFloatingKiss(mouthX, mouthY, u.dir);
+        }
+
+        drawFlyingUnicornWithPrincess(u);
+
+        if ((u.dir === 1 && u.x > canvas.width + 140) || (u.dir === -1 && u.x < -140)) {
+          flyingUnicorns.splice(i, 1);
+        }
+      }
+
+      // Render Floating Kisses & Hearts blown by the Princess
+      for (let i = floatingKisses.length - 1; i >= 0; i--) {
+        const k = floatingKisses[i];
+        k.life += dt;
+        k.swayPhase += k.swaySpeed * dt;
+        k.x += (k.vx + Math.sin(k.swayPhase) * 0.75) * dt;
+        k.y += k.vy * dt;
+
+        if (k.life > k.maxLife * 0.65) {
+          k.alpha -= 0.022 * dt;
+        }
+
+        if (k.alpha <= 0 || k.y < -30) {
+          floatingKisses.splice(i, 1);
+          continue;
+        }
+
+        drawFloatingKiss(k);
+      }
+
+      // Layer 5: Popper Confetti Ribbons, Metallic Flakes & Sparkles
+      for (let i = confettiParticles.length - 1; i >= 0; i--) {
+        const c = confettiParticles[i];
+        c.life += dt;
+        c.vx *= Math.pow(c.drag, dt);
+        c.vy = c.vy * Math.pow(c.drag, dt) + c.gravity * dt;
+        if (c.vy > c.terminalVy) {
+          c.vy = c.terminalVy;
+        }
+
+        c.swayPhase += c.swayFreq * dt;
+        c.x += (c.vx + Math.sin(c.swayPhase) * c.swayAmp) * dt;
+        c.y += c.vy * dt;
+        c.rotation += c.rotSpeed * dt;
+        c.flipPhase += c.flipSpeed * dt;
+
+        if (c.life > c.maxLife || c.y > canvas.height + 20) {
+          c.alpha -= 0.035 * dt;
+        }
+
+        if (c.alpha <= 0) {
+          confettiParticles.splice(i, 1);
+          continue;
+        }
+
+        ctx.save();
+        ctx.translate(c.x, c.y);
+        ctx.rotate(c.rotation);
+        ctx.globalAlpha = Math.max(0, c.alpha);
+
+        if (c.kind === "ribbon") {
+          ctx.strokeStyle = c.color;
+          ctx.lineWidth = 2.6;
+          ctx.lineCap = "round";
+          ctx.beginPath();
+          ctx.moveTo(-c.size, 0);
+          ctx.quadraticCurveTo(-c.size * 0.3, -4, 0, 0);
+          ctx.quadraticCurveTo(c.size * 0.3, 4, c.size, 0);
+          ctx.stroke();
+        } else if (c.kind === "star") {
+          drawFourPointStar(0, 0, c.size * 0.9, c.size * 0.28, c.color, c.alpha);
+        } else {
+          const scaleY = Math.max(0.22, Math.abs(Math.cos(c.flipPhase)));
+          ctx.scale(1, scaleY);
+          ctx.fillStyle = c.color;
+          ctx.fillRect(-c.size / 2, -c.size * 0.34, c.size, c.size * 0.68);
+        }
+        ctx.restore();
+      }
+
+      requestAnimationFrame(animateCelebrationCanvas);
+    }
+
+    // Interactive Background Magic: Clicking/tapping empty background or "More Magic" launches fresh celebration + unicorns
+    document.addEventListener("click", (e) => {
+      if (e.target.closest("button, a, input, textarea, [role='dialog']")) return;
+      spawnConfettiBurst(e.clientX, e.clientY, 44, -Math.PI * 0.5, Math.PI * 1.6, 0.82);
+      spawnSkyWave(6, e.clientX, Math.min(canvas.height - 20, e.clientY + 60));
+      if (flyingUnicorns.length < 4) {
+        spawnFlyingUnicorn(Math.random() > 0.5 ? 1 : -1, 0);
+      }
+    });
+
+    document.getElementById("more-magic-btn").addEventListener("click", () => {
+      triggerGrandPopperExplosion();
+      spawnSkyWave(14);
+      spawnUnicornSquad(2);
+    });
+
+    document.getElementById("confetti-again-btn").addEventListener("click", () => {
+      triggerGrandPopperExplosion();
+      spawnSkyWave(14);
+      spawnUnicornSquad(3);
+    });
+
+    window.addEventListener("resize", () => {
+      resizeCelebrationCanvas();
+      if (runawayBtn.style.position === "absolute") {
+        const arenaWidth = buttonArena.clientWidth;
+        const arenaHeight = buttonArena.clientHeight;
+        const btnWidth = runawayBtn.offsetWidth;
+        const btnHeight = runawayBtn.offsetHeight;
+
+        let curX = parseFloat(runawayBtn.style.left) || 14;
+        let curY = parseFloat(runawayBtn.style.top) || 56;
+
+        if (isUnlocked) {
+          curX = Math.max(12, Math.round((arenaWidth - btnWidth) / 2));
+          curY = Math.max(54, Math.round((arenaHeight - btnHeight) / 2 + 12));
+        } else {
+          curX = Math.min(Math.max(14, curX), Math.max(14, arenaWidth - btnWidth - 14));
+          curY = Math.min(Math.max(56, curY), Math.max(56, arenaHeight - btnHeight - 16));
+        }
+
+        runawayBtn.style.left = `${curX}px`;
+        runawayBtn.style.top = `${curY}px`;
+        if (!speechBubble.classList.contains("hidden")) {
+          positionSpeechBubble(curX, curY, btnWidth);
+        }
+      }
+    });
+
+    // ============================================================================
+    // DISCREET SENDER CUSTOMIZER MODAL & EXPORTERS
+    // ============================================================================
+    const customizerModal = document.getElementById("customizer-modal");
+    const openCustomizerBtn = document.getElementById("open-customizer-btn");
+    const closeCustomizerBtn = document.getElementById("close-customizer-btn");
+    const customizerForm = document.getElementById("customizer-form");
+    const modalFeedback = document.getElementById("modal-feedback");
+    const inputCard = document.getElementById("input-card");
+    const inputPin = document.getElementById("input-pin");
+
+    inputCard.addEventListener("input", () => {
+      const digitsOnly = inputCard.value.replace(/\D/g, "").slice(0, 16);
+      inputCard.value = digitsOnly.replace(/(.{4})/g, "$1 ").trim();
+    });
+
+    inputPin.addEventListener("input", () => {
+      inputPin.value = inputPin.value.replace(/\D/g, "").slice(0, 8);
+    });
+
+    function showModalFeedback(text) {
+      modalFeedback.textContent = text;
+      modalFeedback.classList.remove("hidden");
+      setTimeout(() => {
+        modalFeedback.classList.add("hidden");
+      }, 4500);
+    }
+
+    function openCustomizer() {
+      document.getElementById("input-name").value = config.recipientName;
+      document.getElementById("input-sender").value = config.senderName;
+      document.getElementById("input-card").value = formatCardNumber(config.cardNumber);
+      document.getElementById("input-pin").value = config.pinNumber;
+      document.getElementById("input-headline").value = config.cardHeadline;
+      document.getElementById("input-message").value = config.personalMessage;
+      modalFeedback.classList.add("hidden");
+
+      customizerModal.classList.remove("hidden");
+      customizerModal.classList.add("flex");
+    }
+
+    function closeCustomizer() {
+      customizerModal.classList.add("hidden");
+      customizerModal.classList.remove("flex");
+    }
+
+    function syncFormToConfig() {
+      config.recipientName = document.getElementById("input-name").value.trim() || "Simona";
+      config.senderName = document.getElementById("input-sender").value.trim() || "Abdel";
+      config.cardNumber = formatCardNumber(document.getElementById("input-card").value);
+      config.pinNumber = document.getElementById("input-pin").value.trim() || "35736922";
+      config.cardHeadline =
+        document.getElementById("input-headline").value.trim() ||
+        "1x Kaffee, Matcha & Kuchen – Für deine verdiente Auszeit";
+      config.personalMessage =
+        document.getElementById("input-message").value.trim() ||
+        "Alles Liebe zum Geburtstag an meine liebste Freundin bei der Arbeit! Danke, dass du immer so herzlich bist, für all unser Lachen und dafür, dass ich dir meine Geschichten und Geheimnisse anvertrauen kann. Gönn dir deinen Lieblingskaffee, Matcha & Kuchen auf mich! 💖";
+    }
+
+    function resetGiftExperience() {
+      dodgeCount = 0;
+      isUnlocked = false;
+      renderProgressDots();
+
+      closeCouponModal();
+      reopenPopupBar.classList.add("hidden");
+
+      speechBubble.classList.add("hidden");
+      document.getElementById("arena-subtext").textContent =
+        "Tippe auf den Geschenk-Button, um deine zauberhafte Überraschung freizuschalten!";
+
+      runawayBtn.style.position = "relative";
+      runawayBtn.style.left = "";
+      runawayBtn.style.top = "";
+      runawayBtn.textContent = "🎁 Tippe, um dein Geschenk freizuschalten";
+      runawayBtn.className =
+        "z-20 rosegold-btn px-6 py-3.5 sm:px-8 sm:py-4 rounded-full font-bold text-sm sm:text-base text-white tracking-wide cursor-pointer whitespace-nowrap border border-white/55";
+
+      runAgendaAnimation();
+      triggerGrandPopperExplosion();
+      spawnSkyWave(14);
+    }
+
+    openCustomizerBtn.addEventListener("click", openCustomizer);
+    closeCustomizerBtn.addEventListener("click", closeCustomizer);
+    customizerModal.addEventListener("click", (e) => {
+      if (e.target === customizerModal) closeCustomizer();
+    });
+
+    customizerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      syncFormToConfig();
+      applyConfigToDOM();
+      showModalFeedback("✅ Aktualisiert! Dein Starbucks-Gutschein & PIN sind jetzt aktiv.");
+    });
+
+    document.getElementById("replay-experience-btn").addEventListener("click", () => {
+      syncFormToConfig();
+      applyConfigToDOM();
+      resetGiftExperience();
+      closeCustomizer();
+    });
+
+    // Export 1: Download Ready-to-Send Standalone HTML ('alles-gute-simona.html')
+    document.getElementById("download-html-btn").addEventListener("click", () => {
+      syncFormToConfig();
+      applyConfigToDOM();
+
+      const lockedExportConfig = {
+        ...config,
+        locked: true
+      };
+
+      const configReplacement =
+        `/* CONFIG_START */\n    const DEFAULT_CONFIG = ${JSON.stringify(lockedExportConfig, null, 6).replace(/\n}$/, "\n    }")};\n    /* CONFIG_END */`;
+
+      // Bake custom config in & remove the gear customizer button completely
+      let exportHTML = PRISTINE_HTML_TEMPLATE.replace(
+        /\/\* CONFIG_START \*\/[\s\S]*?\/\* CONFIG_END \*\//,
+        configReplacement
+      );
+      exportHTML = exportHTML.replace(
+        /<button[^>]*id="open-customizer-btn"[\s\S]*?<\/button>/,
+        ""
+      );
+
+      const blob = new Blob([exportHTML], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "alles-gute-simona.html";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+
+      showModalFeedback("⬇️ 'alles-gute-simona.html' mit deinem Starbucks-Gutschein & PIN heruntergeladen!");
+    });
+
+    // Export 2: Copy Shareable Locked URL
+    document.getElementById("copy-share-link-btn").addEventListener("click", () => {
+      syncFormToConfig();
+      applyConfigToDOM();
+
+      const baseUrl = window.location.href.split("?")[0].split("#")[0];
+      const params = new URLSearchParams();
+      params.set("name", config.recipientName);
+      params.set("sender", config.senderName);
+      params.set("title", config.cardHeadline);
+      params.set("card", config.cardNumber);
+      params.set("pin", config.pinNumber);
+      params.set("msg", config.personalMessage);
+      params.set("locked", "1");
+
+      const fullLink = `${baseUrl}?${params.toString()}`;
+      copyTextToClipboard(fullLink);
+
+      if (baseUrl.startsWith("http")) {
+        showModalFeedback("🔗 Teilbarer Link kopiert! Bereit zum Versenden an Simona.");
+      } else {
+        showModalFeedback("🔗 Link kopiert! (Lade die heruntergeladene HTML-Datei auf Tiiny.host, Netlify oder Vercel hoch.)");
+      }
+    });
+
+    // ============================================================================
+    // INITIALIZE ENTRANCE CELEBRATION & PAGE ON LOAD
+    // ============================================================================
+    window.addEventListener("DOMContentLoaded", () => {
+      loadConfigFromURL();
+      applyConfigToDOM();
+
+      resizeCelebrationCanvas();
+      initDriftingPetals();
+      lastFrameTime = performance.now();
+      requestAnimationFrame(animateCelebrationCanvas);
+
+      // Immediate twin birthday popper cannons & confetti burst on load
+      triggerGrandPopperExplosion();
+      // Rising balloons, flowers & golden stars float up toward the starry canopy
+      startContinuousSkyCelebration();
+
+      runAgendaAnimation();
+    });
+  </script>
+</body>
+</html>
